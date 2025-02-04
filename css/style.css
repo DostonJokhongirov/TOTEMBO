@@ -46,7 +46,11 @@ ul{
     color: var(--dark);
 }
 
-.nav_list,
+.nav_list {
+    display: flex;
+    gap: 30px;
+}
+
 .nav_icons {
     display: flex;
     gap: 40px;
@@ -57,4 +61,113 @@ ul{
     font-weight: 400;
     line-height: 21.94px;
     color: var(--dark);
+}
+
+/* intro */
+
+.intro_box {
+    margin-top: 40px;
+    display: flex;
+    gap: 24px;
+    padding: 0 12px;
+}
+
+.persent {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 12px 38px;
+    background-color: var(--dark);
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26.82px;
+    color: #fff;
+
+}
+
+.intro_left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.intro_left_card {
+    position: relative;
+    width: 526px;
+    padding-top: 73px;
+    padding-bottom: 47px;
+    background-color: var(--grey);
+    border-radius: 10px;
+    box-shadow: 6px 6px 15px 0px #84848476;
+}
+
+.left_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.left_content_texts {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left_content_text {
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+}
+
+.left_content_text span {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.content_second {
+    gap: 12px;
+    transform: translateX(7%);
+}
+
+.intro_right {
+    position: relative;
+    max-width: 746px;
+    width: 100%;
+    background-color: var(--grey);
+    box-shadow: 6px 6px 15px 0px #84848476;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_content {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_content_texts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.right_content_text {
+    color: var(--dark);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16.84px;
+}
+
+.right_content_text span {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 16.84px; 
 }
