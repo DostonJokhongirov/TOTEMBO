@@ -69,3 +69,41 @@
         transform: scale(0);
     }
 }
+
+@media(max-width:850px) {
+    .nav_box {
+        padding-top: 30px;
+    }
+
+    .nav_list {
+        transform: scaleY(0);
+        top: 30%;
+    }
+
+    #chek:checked~.nav_list {
+        transform: scale(1);
+    }
+
+    .nav_logo {
+        transform: translate(-50%,-40%)
+    }
+
+    .menu {
+        transform: translateY(-30%);
+    }
+}
+
+@media(max-width:750px) {
+    .botmenu_box {
+        position: fixed;
+        bottom: 0;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: rgb(110, 180, 180);
+        height: 100px;
+        width: 95%;
+        border-top: 2px solid var(--dark);
+    }
+
+}
+
