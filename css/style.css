@@ -171,3 +171,18 @@ ul{
     font-weight: 700;
     line-height: 16.84px; 
 }
+
+.menu,
+.close {
+    background-color: unset;
+    border: unset;
+    display: none;
+}
+
+.menu img,.close img {
+    width: 20px;
+}
+
+#chek {
+    display: none;
+}
