@@ -173,7 +173,7 @@ ul{
 }
 
 .menu,
-.close {
+.close,.bot_menu,.bot_close {
     background-color: unset;
     border: unset;
     display: none;
@@ -183,6 +183,6 @@ ul{
     width: 20px;
 }
 
-#chek {
+#chek,#bot_chek {
     display: none;
 }
