@@ -95,17 +95,132 @@
 
 @media(max-width:750px) {
     .botmenu_box {
-        display: block;
         position: fixed;
         bottom: 0;
         margin-right: auto;
         margin-left: auto;
-        background-color: rgb(110, 180, 180);
         height: 100px;
         width: 95%;
         border-top: 2px solid var(--dark);
         padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        z-index: 99;
     }
     
+    .botmenu_card  img {
+        width: 40px;
+        filter: invert(15%) brightness(85%);
+}
+
+    .botmenu_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .botmenu_card p {
+        font-size: 16px;
+        font-weight: 500;
+        color: #323232;
+    }
+
+    .nav_list {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .nav_icon {
+        display: none;
+    }
+
+    .ru {
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-30%);
+    }
+
+    .ru img {
+        width: 30px;
+    }
+
+    .nav_box {
+        height: 76px;
+    }
+}
+
+@media(max-width:500px) {
+    .botmenu_card  img {
+        width: 30px;
+    }
+
+    .botmenu_card p {
+        font-size: 14px;
+        font-weight: 500;
+        color: #323232;
+    }
+
+    .botmenu_card {
+        gap: 6px;
+    }
+
+    .botmenu_box {
+        height: 80px;
+    }
+
+    .nav_logo {
+        left: 0;
+        transform: translate(10%,-40%);
+        font-size: 28px;
+    }
+
+    .nav_box {
+        height: 65px;
+    }
+
+    .ru img {
+        width: 28px;
+    }
+}
+
+@media(max-width:350px) {
+    .botmenu_card  img {
+        width: 25px;
+    }
+
+    .botmenu_card p {
+        font-size: 12px;
+        font-weight: 500;
+        color: #323232;
+    }
+
+    .botmenu_box {
+        height: 60px;
+    }
+
+    .botmenu_card {
+        gap: 4px;
+    }
+
+    .nav_box {
+        height: 50px;
+    }
+
+    .nav_logo {
+        font-size: 24px;
+    }
+
+    .ru img {
+        width: 24px;
+    }
 }
 
