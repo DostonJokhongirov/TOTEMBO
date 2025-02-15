@@ -4,6 +4,27 @@
     --grey: #E1E1E1;
 }
 
+@media(max-width:1350px) {
+    .intro_box {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .intro_right {
+        height: 618px;
+    }
+
+    .intro_left {
+        max-width: 746px;
+        width: 100%;
+    }
+
+    .intro_left_card {
+        max-width: 746px;
+        width: 100%;
+    }
+}
+
 @media(max-width:1140px) {
     .nav_list {
         gap: 20px;
@@ -91,6 +112,14 @@
     .menu {
         transform: translateY(-30%);
     }
+
+    .intro_right {
+        height: 518px;
+    }
+
+    .nav_list {
+        z-index: 99;
+    }
 }
 
 @media(max-width:750px) {
@@ -109,6 +138,7 @@
         background-color: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(10px);
         z-index: 99;
+        display: none;
     }
     
     .botmenu_card  img {
@@ -158,6 +188,36 @@
     }
 }
 
+@media(max-width:700px) {
+    .right_content img {
+        width: 250px;
+    }
+
+    .right_content {
+        gap: 15px;
+    }
+}
+
+@media(max-width:600px) {
+    .right_content img {
+        width: 220px;
+    }
+
+    .right_content {
+        gap: 10px;
+    }
+
+    .intro_right {
+        height: 400px;
+    }
+}
+
+@media(max-width:550px) {
+    .left_content {
+        gap: 10px;
+    }
+}
+
 @media(max-width:500px) {
     .botmenu_card  img {
         width: 30px;
@@ -190,6 +250,68 @@
     .ru img {
         width: 28px;
     }
+
+    .right_content img {
+        width: 170px;
+    }
+
+    .right_content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .intro_right {
+        height: 330px;
+    }
+
+    .left_content_texts {
+        gap: 15px;
+    }
+
+    .right_content_text span {
+        font-size: 18px;
+    }
+
+    .left_content img {
+        width: 110px;
+    }
+
+    .intro_left_persent {
+        transform: scale(0.8);
+        top: 10px;
+        left: 5px;
+    }
+
+    .content_second {
+        justify-content: flex-start;
+    }
+}
+
+@media(max-width:450px) {
+    .persent {
+        transform: scale(0.9);
+        top: 14px;
+        left: 14px;
+    }
+
+    .intro_left_persent {
+        transform: scale(0.7);
+        top: 6px;
+        left: -4px;
+    }
+
+    .left_content {
+        flex-direction: column;
+    }
+
+    .content_second {
+        transform: translate(0);
+    }
+
+    .intro_left_card {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
 }
 
 @media(max-width:350px) {
@@ -221,6 +343,40 @@
 
     .ru img {
         width: 24px;
+    }
+
+    .persent {
+        transform: scale(0.75);
+        top: 8px;
+        left: 1px;
+    }
+
+    .intro_right {
+        height: 250px;
+    }
+
+    .right_content img {
+        width: 140px;
+    }
+
+    .right_content {
+        gap: 14px;
+    }
+
+    .left_content_texts {
+        gap: 8px;
+    }
+
+    .right_content_text span {
+        font-size: 16px;
+    }
+
+    .right_content_text {
+        font-size: 14px;
+    }
+
+    .left_content img {
+        width: 90px;
     }
 }
 
