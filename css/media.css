@@ -23,6 +23,10 @@
         max-width: 746px;
         width: 100%;
     }
+
+    .watchs_box {
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 @media(max-width:1140px) {
@@ -122,6 +126,36 @@
     }
 }
 
+@media(max-width:800px) {
+    .watchs_card_persent {
+        transform: scale(0.9);
+        top: 12px;
+        left: 9px;
+    }
+
+    .watchs_card_box img {
+        width: 180px;
+    }
+
+    .watchs_card_box {
+        gap: 15px;
+    }
+
+    .watchs_card {
+        min-height: 440px;
+    }
+
+    .watch_card_icons {
+        gap: 10px;
+    }
+
+    .watch_card_icons {
+        transform: scale(0.9);
+        top: 8px;
+        right: 10px;
+    }
+}
+
 @media(max-width:750px) {
     .botmenu_box {
         position: fixed;
@@ -196,6 +230,32 @@
     .right_content {
         gap: 15px;
     }
+
+    .watchs_box {
+        row-gap: 30px;
+    }
+}
+
+@media(max-width:650px) {
+    .watchs_card_box img {
+        width: 150px;
+    }
+
+    .watchs_card_text {
+        font-size: 18px;
+    }
+
+    .watchs_card_title {
+        font-size: 18px;
+    }
+
+    .watchs_card_box {
+        gap: 8px;
+    }
+
+    .watchs_card {
+        min-height: 390px;
+    }
 }
 
 @media(max-width:600px) {
@@ -209,6 +269,21 @@
 
     .intro_right {
         height: 400px;
+    }
+
+    .watchs_box {
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
+        overflow-x: scroll;
+        padding-bottom: 20px;
+        transform: translate3d(0, 0, 0) scale(1);
+        will-change: transform;
+        image-rendering: crisp-edges;
+    }
+    
+    .watchs_card {
+        width: 300px;
+        flex-shrink: 0;
     }
 }
 
@@ -285,6 +360,25 @@
     .content_second {
         justify-content: flex-start;
     }
+
+    .intro_box {
+        margin-top: 20px;
+    }
+
+    .intro_left {
+        flex-direction: row;
+        overflow: hidden;
+        overflow-x: scroll;
+        padding-bottom: 20px;
+    }
+
+    .intro_left_card {
+        flex-shrink: 0;
+    }
+
+    .intro_left::-webkit-scrollbar {
+        height: 0;
+    }
 }
 
 @media(max-width:450px) {
@@ -349,6 +443,10 @@
         transform: scale(0.75);
         top: 8px;
         left: 1px;
+    }
+
+    .intro_box {
+        gap: 16px;
     }
 
     .intro_right {
